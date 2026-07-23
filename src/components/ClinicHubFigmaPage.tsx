@@ -1,38 +1,48 @@
-import svgPaths from "./svg-1tvoqyswp7";
-import imgImageDoctorsImages from "../../../assets/clinic-hub/hero-doctors.png";
-import imgImage from "../../../assets/clinic-hub/clinic-video-preview.png";
-import imgContainer from "../../../assets/clinic-hub/clinic-collage-01.png";
-import imgContainer1 from "../../../assets/clinic-hub/clinic-collage-02.png";
-import imgContainer2 from "../../../assets/clinic-hub/clinic-collage-03.png";
-import imgContainer3 from "../../../assets/clinic-hub/clinic-collage-04.png";
-import imgContainer4 from "../../../assets/clinic-hub/clinic-collage-05.png";
-import imgContainer5 from "../../../assets/clinic-hub/clinic-collage-06.png";
-import imgImageDentalImage from "../../../assets/clinic-hub/service-dental-care.png";
-import imgImageOrthopedicImage from "../../../assets/clinic-hub/service-orthopedics.png";
-import imgImageGeneralMedicine from "../../../assets/clinic-hub/service-general-medicine.png";
-import imgCanvas from "../../../assets/clinic-hub/service-canvas-illustration.png";
-import imgImageDermatologyImage from "../../../assets/clinic-hub/service-dermatology.png";
-import imgImageGynecologyImage from "../../../assets/clinic-hub/service-gynecology.png";
-import imgImagePediatricCare from "../../../assets/clinic-hub/service-pediatric-care.png";
-import imgImageStep1Illustration from "../../../assets/clinic-hub/booking-step-select-care.png";
-import imgImageStep2Illustraiton from "../../../assets/clinic-hub/booking-step-schedule.png";
-import imgImageStep3Illustation from "../../../assets/clinic-hub/booking-step-confirm-care.png";
-import imgWhatsAppImage20260616At64257PmRemovebgPreview2 from "../../../assets/clinic-hub/doctor-cutout.png";
-import imgImageDawwardWinningDoctorImage from "../../../assets/clinic-hub/award-winning-doctor.png";
-import imgImage1 from "../../../assets/clinic-hub/testimonial-avatar-01.png";
-import imgImage2 from "../../../assets/clinic-hub/testimonial-avatar-02.png";
-import imgImage3 from "../../../assets/clinic-hub/testimonial-avatar-03.png";
-import imgImageDoctorsImage from "../../../assets/clinic-hub/doctor-profile-01.png";
-import imgImage4 from "../../../assets/clinic-hub/doctor-profile-02.png";
-import imgImage5 from "../../../assets/clinic-hub/doctor-profile-03.png";
-import imgImage6 from "../../../assets/clinic-hub/doctor-profile-04.png";
-import imgImage7 from "../../../assets/clinic-hub/doctor-profile-05.png";
-import imgImage8 from "../../../assets/clinic-hub/doctor-profile-06.png";
-import imgImageIsoBadge from "../../../assets/clinic-hub/certification-iso-badge.png";
-import imgImageHippaBadge from "../../../assets/clinic-hub/certification-hipaa-badge.png";
-import imgContainer6 from "../../../assets/clinic-hub/footer-clinic-card.png";
-import imgImageClinicHubLogo from "../../../assets/clinic-hub/clinic-hub-logo.png";
-import { imgWhatsAppImage20260616At64257PmRemovebgPreview1 } from "./svg-u09xd";
+import svgPaths from "../svg-1tvoqyswp7";
+import imgImageDoctorsImages from "../assets/clinic-hub/hero-doctors.png";
+import imgImage from "../assets/clinic-hub/clinic-video-preview.png";
+import imgContainer from "../assets/clinic-hub/clinic-collage-01.png";
+import imgContainer1 from "../assets/clinic-hub/clinic-collage-02.png";
+import imgContainer2 from "../assets/clinic-hub/clinic-collage-03.png";
+import imgContainer3 from "../assets/clinic-hub/clinic-collage-04.png";
+import imgContainer4 from "../assets/clinic-hub/clinic-collage-05.png";
+import imgContainer5 from "../assets/clinic-hub/clinic-collage-06.png";
+import imgImageDentalImage from "../assets/clinic-hub/service-dental-care.png";
+import imgImageOrthopedicImage from "../assets/clinic-hub/service-orthopedics.png";
+import imgImageGeneralMedicine from "../assets/clinic-hub/service-general-medicine.png";
+import imgCanvas from "../assets/clinic-hub/service-canvas-illustration.png";
+import imgImageDermatologyImage from "../assets/clinic-hub/service-dermatology.png";
+import imgImageGynecologyImage from "../assets/clinic-hub/service-gynecology.png";
+import imgImagePediatricCare from "../assets/clinic-hub/service-pediatric-care.png";
+import imgImageStep1Illustration from "../assets/clinic-hub/booking-step-select-care.png";
+import imgImageStep2Illustraiton from "../assets/clinic-hub/booking-step-schedule.png";
+import imgImageStep3Illustation from "../assets/clinic-hub/booking-step-confirm-care.png";
+import imgWhatsAppImage20260616At64257PmRemovebgPreview2 from "../assets/clinic-hub/doctor-cutout.png";
+import imgImageDawwardWinningDoctorImage from "../assets/clinic-hub/award-winning-doctor.png";
+import imgImage1 from "../assets/clinic-hub/testimonial-avatar-01.png";
+import imgImage2 from "../assets/clinic-hub/testimonial-avatar-02.png";
+import imgImage3 from "../assets/clinic-hub/testimonial-avatar-03.png";
+import imgImageDoctorsImage from "../assets/clinic-hub/doctor-profile-01.png";
+import imgImage4 from "../assets/clinic-hub/doctor-profile-02.png";
+import imgImage5 from "../assets/clinic-hub/doctor-profile-03.png";
+import imgImage6 from "../assets/clinic-hub/doctor-profile-04.png";
+import imgImage7 from "../assets/clinic-hub/doctor-profile-05.png";
+import imgImage8 from "../assets/clinic-hub/doctor-profile-06.png";
+import imgImageIsoBadge from "../assets/clinic-hub/certification-iso-badge.png";
+import imgImageHippaBadge from "../assets/clinic-hub/certification-hipaa-badge.png";
+import imgContainer6 from "../assets/clinic-hub/footer-clinic-card.png";
+import imgImageClinicHubLogo from "../assets/clinic-hub/clinic-hub-logo.png";
+import { imgWhatsAppImage20260616At64257PmRemovebgPreview1 } from "../svg-u09xd";
+
+function scrollToBooking() {
+  document.getElementById("book")?.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+function activateOnEnter(event: { key: string }) {
+  if (event.key === "Enter" || event.key === " ") {
+    scrollToBooking();
+  }
+}
 
 function ImageDoctorsImages() {
   return (
@@ -219,7 +229,7 @@ function Container9() {
 
 function MainButton() {
   return (
-    <div className="bg-white h-[49.6px] relative rounded-[12px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.08)] shrink-0 w-[152.838px]" data-name="Main Button">
+    <div className="bg-white h-[49.6px] relative rounded-[12px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.08)] shrink-0 w-[152.838px]" data-name="Main Button" onClick={scrollToBooking} onKeyDown={activateOnEnter} role="button" tabIndex={0}>
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center overflow-clip px-[24px] py-[14px] relative rounded-[inherit] size-full">
         <Container9 />
       </div>
@@ -1216,7 +1226,7 @@ function Container58() {
 
 function MainButton1() {
   return (
-    <div className="bg-white h-[49.6px] relative rounded-[12px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.08)] shrink-0 w-[270px]" data-name="Main Button">
+    <div className="bg-white h-[49.6px] relative rounded-[12px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.08)] shrink-0 w-[270px]" data-name="Main Button" onClick={scrollToBooking} onKeyDown={activateOnEnter} role="button" tabIndex={0}>
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center overflow-clip px-[24px] py-[14px] relative rounded-[inherit] size-full">
         <Container58 />
       </div>
@@ -5616,7 +5626,7 @@ function Container383() {
 
 function MainButton2() {
   return (
-    <div className="bg-white h-[66px] relative rounded-tl-[20px] shrink-0 w-[198.538px]" data-name="Main Button">
+    <div className="bg-white h-[66px] relative rounded-tl-[20px] shrink-0 w-[198.538px]" data-name="Main Button" onClick={scrollToBooking} onKeyDown={activateOnEnter} role="button" tabIndex={0}>
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[15px] items-center justify-center overflow-clip px-[20px] py-[15px] relative rounded-[inherit] size-full">
         <Container382 />
         <Container383 />
@@ -5649,7 +5659,7 @@ function Container378() {
 
 function Container372() {
   return (
-    <div className="bg-[#eaffe3] flex-[378_0_0] h-[453.8px] max-w-[378px] min-w-px relative rounded-[15px]" data-name="Container">
+    <div id="book" className="bg-[#eaffe3] flex-[378_0_0] h-[453.8px] max-w-[378px] min-w-px relative rounded-[15px]" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[80px] items-start justify-center max-w-[inherit] overflow-clip relative rounded-[inherit] size-full">
         <Container373 />
         <Container378 />
@@ -6420,7 +6430,7 @@ function Container432() {
 
 function MainButton3() {
   return (
-    <div className="absolute bg-white content-stretch flex h-[50px] items-center justify-center left-0 overflow-clip px-[24px] py-[14px] rounded-[12px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.08)] top-[-0.02px] w-[142px]" data-name="Main Button">
+    <div className="absolute bg-white content-stretch flex h-[50px] items-center justify-center left-0 overflow-clip px-[24px] py-[14px] rounded-[12px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.08)] top-[-0.02px] w-[142px]" data-name="Main Button" onClick={scrollToBooking} onKeyDown={activateOnEnter} role="button" tabIndex={0}>
       <Container432 />
     </div>
   );
@@ -6650,7 +6660,7 @@ function Container449() {
 
 function MainButton4() {
   return (
-    <div className="bg-white h-[43.2px] relative rounded-[8px] shrink-0 w-[126.037px]" data-name="Main Button">
+    <div className="bg-white h-[43.2px] relative rounded-[8px] shrink-0 w-[126.037px]" data-name="Main Button" onClick={scrollToBooking} onKeyDown={activateOnEnter} role="button" tabIndex={0}>
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center overflow-clip px-[20px] py-[12px] relative rounded-[inherit] size-full">
         <Container449 />
       </div>
@@ -6692,7 +6702,7 @@ function Container434() {
 
 function Template1() {
   return (
-    <div className="absolute h-[55.2px] left-0 top-[25px] w-[1520.8px]" data-name="Template">
+    <div className="fixed absolute h-[55.2px] left-0 top-[25px] w-[1520.8px]" data-name="Template">
       <div className="flex flex-row items-center justify-center size-full">
         <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center p-[60px] relative size-full">
           <Container434 />
@@ -6702,7 +6712,7 @@ function Template1() {
   );
 }
 
-export default function ExporttoFigmaClinichubFramerAiClinicHubFamilyClinic() {
+export default function ClinicHubFigmaPage() {
   return (
     <div className="bg-white content-stretch flex flex-col items-start relative size-full" data-name="ExporttoFigma | clinichub.framer.ai | ClinicHub - Family Clinic">
       <Template />
