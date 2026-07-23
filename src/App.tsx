@@ -1,9 +1,5 @@
-import ExporttoFigmaClinichubFramerAiClinicHubFamilyClinic from './index'
+import ClinicHubSite from "./index"
 
 export default function App() {
-  return (
-    <div style={{ width: '100%', overflowX: 'auto' }}>
-      <ExporttoFigmaClinichubFramerAiClinicHubFamilyClinic />
-    </div>
-  )
+  return <ClinicHubSite />
 }
