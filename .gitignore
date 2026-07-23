@@ -1,0 +1,11 @@
+node_modules/
+imports/
+.figma/
+AGENTS.md
+CLAUDE.md
+.env
+.vscode/
+.gemini/
+.claude/
+.github/
+.history/
