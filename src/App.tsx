@@ -6,4 +6,8 @@ export default function App() {
       <ClinicHubFigmaPage />
     </div>
   )
+import ClinicHubSite from "./index"
+
+export default function App() {
+  return <ClinicHubSite />
 }
